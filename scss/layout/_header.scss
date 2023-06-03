@@ -1,0 +1,13 @@
+@import "../utilities/variables";
+
+.header {
+    background-color: $color-darkSecondary;
+    width: 100%;
+    z-index: 100;
+}
+
+.header__logo img {
+    max-width: 200px;
+    max-height: 100px;
+    filter: $shadow-img;
+}

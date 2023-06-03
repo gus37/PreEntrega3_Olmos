@@ -1,0 +1,47 @@
+@import "../utilities/variables";
+/* VIDEOS-HTML */
+.htmlvideos__container {
+    @media (min-width: $mobile-sm) {
+        margin-bottom: 10vh;
+    }
+
+    @media (min-width: $tablet-md) {
+        padding-top: 9vh;
+        padding-bottom: 5vh;
+        margin-bottom: 9vh;
+    }
+}
+
+.videoshtml__gallery {
+    overflow: auto;
+    background-color: $color-darkPrimary;
+    width: 100%;
+    height: 350px;
+    margin: auto;
+    padding-top: 20px;
+    filter: $shadow-img;
+
+    a {
+        text-decoration: none;
+
+        h2 {
+            font-size: 15px;
+
+            &:hover {
+                transition: $transiton;
+                transform: $transform;
+            }
+        }
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    @media (min-width: $tablet-md) {
+        width: 100%;
+        height: 1000px;
+        margin: auto;
+    }
+}

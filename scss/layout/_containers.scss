@@ -1,0 +1,119 @@
+@import "../utilities/variables";
+
+// Containers
+.container {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+// index containers:
+
+// biagrafia del index
+.bio__container {
+    @extend .container;
+    background-image: $gradient, url(../img/02-bio/bg-bio-sepia.jpg);
+    gap: 10px
+}
+
+
+// tour del index
+.tour__container {
+    @extend .container;
+    background-image: $gradient, url(../img/03-tour/bg-tour/bg-tour-sepia.jpg);
+}
+
+
+// discografia del index
+.index-disc__container {
+    @extend .container;
+    background-image: $gradient, url(../img/04-discografía/bg-discografia/01-bg-index-disc-sepia.jpg);
+    text-align: center;
+}
+
+
+// fotos del index
+.index-pics {
+    @extend .container;
+    background-image: $gradient, url(../img/05-galeria-fotos/bg-galfotos/fondo-index-galeria-sepia.jpg);
+    text-align: center;
+}
+
+// videos del index
+.index-videos__container {
+    @extend .container;
+    background-image: $gradient, url(../img/06-videos/bg-videos/fondo-index-videos-sepia.jpg);
+    text-align: center;
+}
+
+// actuaciones del index
+.container__performances {
+    @extend .container;
+    background-image: $gradient, url(../img/07-actuaciones/bg-actuaciones/bg-actuaciones-sepia.jpg);
+    text-align: center;
+}
+
+// html containers:
+
+// discos html
+.discs-html__container {
+    @extend .container;
+    background-image: $gradient, url(../img/04-discografía/bg-discografia/02-bg-html-disc-sepia.jpg);
+    text-align: center;
+    padding-top: 15vh;
+    margin-bottom: 15vh;
+    gap: 10px;
+}
+
+// fotos html
+.picsgalleryhtml__container {
+    @extend .container;
+    background-image: $gradient, url(../img/05-galeria-fotos/bg-galfotos/fondo-galeria-sepia.jpg);
+    height: auto;
+    text-align: center;
+    padding-top: 25vh;
+    margin-bottom: 12vh;
+    gap: 10px;
+}
+
+// videos html
+.htmlvideos__container {
+    @extend .container;
+    background-image: $gradient, url(../img/06-videos/bg-videos/fondo-videos-html-sepia.jpg);
+    height: auto;
+    text-align: center;
+    padding-top: 25vh;
+    margin-bottom: 12vh;
+    gap: 10px;
+}
+
+// contactos html
+.contact__container {
+    @extend .container;
+    background-image: $gradient, url(../img/08-bg-contacto/01-contactos-sepia.jpg);
+    height: auto;
+    padding-top: 25vh;
+    margin-bottom: 12vh;
+    gap: 10px;
+}
+
+// footer
+.footer__container {    
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #40171af3;
+    width: 100%;
+    bottom: 0;
+    padding: 5px 0;
+}

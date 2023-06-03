@@ -1,0 +1,336 @@
+@import "../utilities/variables";
+
+// Seccion inicio:
+.inicio__texts {
+    h1 {
+        font-family: $typewriter;
+
+        @media (min-width: $tablet-md) {
+            font-size: 35px;
+        }
+    }
+
+    h2 {
+        color: $color-callToAction;
+        text-shadow: $shadow-dark;
+        padding: 10px;
+
+        @media (min-width: $tablet-md) {
+            font-size: 30px;
+        }
+    }
+}
+
+.inicio__img {
+    img {
+        width: 300px;
+        height: 300px;
+        filter: $shadowDark-img;
+
+        @media (min-width: $tablet-md) {
+            width: 500px;
+            height: 500px;
+        }
+    }
+
+}
+
+.inicio__completedisc .escuchalo {
+    display: inline-block;
+
+    span {
+        font-size: 18px;
+        text-shadow: $shadow-dark;
+
+        @media (min-width: $tablet-md) {
+            font-size: 30px;
+        }
+    }
+}
+
+.inicio__completedisc a {
+    text-decoration: none;
+    color: $color-black;
+
+    img {
+        width: 40px;
+        height: 30px;
+        padding: 0;
+        filter: $shadow-img;
+
+        &:hover {
+            transition: $transiton;
+            transform: $transform;
+        }
+
+        @media (min-width: $tablet-md) {
+            width: 100px;
+            height: 80px;
+            padding: 0 10px;
+        }
+    }
+
+}
+
+//Seccion biografia:
+.bio__container {
+    @media (min-width:$desktop-lg) {
+        flex-direction: row;
+    }
+}
+
+.bio__pic{
+    padding: 100px 0px;
+}
+.bio__text{
+    padding: 100px 30px;
+}
+.bio__pic {
+    text-align: center;
+}
+
+// Seccion tour:
+.tour__videopremiere {
+    video {
+        width: 300px;
+        padding: 20px;
+
+        @media (max-width: $desktop-xl) {
+            display: none;
+        }
+    }
+}
+
+.tour__banners {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @media (min-width: $desktop-xl) {
+        flex-direction: row;
+    }
+}
+
+.banners__pics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        padding: 20px;
+
+        &:hover {
+            transition: $transiton;
+            transform: $transform;
+        }
+    }
+
+}
+
+.tour__thanks span {
+    font-size: 20px;
+
+    @media (min-width: $desktop-xl) {
+        font-size: 30px;
+    }
+}
+
+// Seccion discografia:
+
+/* DISCOGRAFIA-index */
+.index-disc__discs {
+
+    @media (min-width: $desktop-lg) {
+        display: flex;
+        gap: 100px;
+        padding: 100px 0px;
+    }
+
+}
+
+.index-discs__listenmore {
+    a {
+        text-decoration: none;
+
+        h2:hover {
+            transition: $transiton;
+            transform: $transform;
+        }
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+
+        &:hover {
+            transition: $transiton;
+            transform: $transform;
+        }
+
+        @media (min-width: $tablet-md) {
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+
+// Seccion fotos:
+.pics__seemore {
+    a {
+        text-decoration: none;
+
+        h2:hover {
+            transition: $transiton;
+            transform: $transform;
+        }
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+
+        &:hover {
+            transition: $transiton;
+            transform: $transform;
+        }
+
+        @media (min-width: $tablet-md) {
+            width: 200px;
+            height: 200px;
+        }
+    }
+}
+
+// seccion videos:
+.videos__premmier {
+    p {
+        font-size: 15px;
+
+        @media (min-width: $desktop-lg) {
+            font-size: 25px;
+        }
+    }
+
+    video {
+        width: 90%;
+        padding: 10px;
+        filter: $shadow-img;
+
+        @media (min-width: $desktop-xl) {
+            width: 70%;
+        }
+    }
+}
+
+.videos__others {
+    video {
+        width: 80%;
+        padding: 10px;
+        filter: $shadow-img;
+
+        @media(min-width: $desktop-xl) {
+            width: 60%;
+            padding: 10px;
+        }
+    }
+}
+
+.videos__seemore {
+    a {
+        text-decoration: none;
+
+        h2:hover {
+            transition: $transiton;
+            transform: $transform;
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+
+            &:hover {
+                transition: $transiton;
+                transform: $transform;
+            }
+
+            @media (min-width: $tablet-md) {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    }
+}
+
+// Seccion actuaciones:
+.performances__gallery {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    padding: 10px;
+    margin-bottom: 13vh;
+    gap: 10px;
+
+    @media (min-width: $mobile-s) {
+        margin-bottom: 17vh;
+    }
+
+    @media (min-width: $mobile-sm) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        margin-bottom: 15vh;
+    }
+
+    @media (min-width: $tablet-md) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        padding: 30px 20px;
+    }
+
+    @media (min-width: $desktop-xl) {
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin-bottom: 8vh;
+    }
+}
+
+.gallery__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $color-lightPrimary;
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    filter: $shadow-img;
+
+    @media (min-width: $tablet-md) {
+        height: 400px;
+    }
+
+    img {
+        width: 90%;
+        height: 50%;
+        filter: $shadowDark-img;
+        border-radius: 5%;
+
+        @media (min-width: $tablet-md) {
+            width: 90%;
+            height: 50%;
+        }
+    }
+}
+
+.gallery__texts {
+    p {
+        font-size: 15px;
+        color: $color-black;
+        text-shadow: $shadow-light;
+
+        @media (min-width: $tablet-md) {
+            font-size: 25px;
+        }
+    }
+}

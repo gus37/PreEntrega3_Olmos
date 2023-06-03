@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../img/logo/favicon.png" type="image/x-icon">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- Mi Css -->
+    <link rel="stylesheet" href="../css/main.css">
+    <title>🖊️ J Mena-Contacto 🖊️</title>
+</head>
+
+<body>
+    <header class="header sticky-top">
+        <!-- "cabecera" se cambian clases implementando BEM y utilizando ingles -->
+        <nav class="header__navbar navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+                <a href="#" class="header__logo navbar-brand">
+                    <!-- logocabecera -->
+                    <img src="../img/logo/Logo_JMENA.png" alt="fondo-jmena" class="img-header img-fluid" width="200px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a href="../index.html" class="menu-i nav-link"
+                                aria-current="page">Inicio</a>
+                        </li>
+                        <li class="nav-item"><a href="discografia.html" class="menu-i nav-link">Discografía</a>
+                        </li>
+                        <li class="nav-item"><a href="fotos.html" class="menu-i nav-link">Fotos</a></li>
+                        <li class="nav-item"><a href="videos.html" class="menu-i nav-link">Videos</a></li>
+                        <li class="nav-item"><a href="contacto.html"
+                                class="menu-i nav-link"><span>Contacto</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="audio">
+            <div class="audio fixed-top">
+                <!-- audio cabecera -->
+                <div class="audio__tittle">
+                    <h2 class="float-end"><span>Subí el volumen: "Amigos"</span></h2>
+                </div>
+                <div class="audio__premmier">
+                    <audio class="float-end" src="../audios/amigo.mp3" controls autoplay muted loop></audio>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container contact__container">
+                <div class="contact__tittle">
+                    <h1>Contacto</h1>
+                </div>
+                <div class="contact__texts">
+                    <p>Me interesa conocerte y saber sobre vos. Contame que canciones te gustan más y si fuiste a
+                        verme en algún concierto. Recordá que tú opinion es de mi gran interés!</p>
+                </div>
+                <div class="contact__form">
+                    <form action="" method="post">
+                        <label for="nombre">
+                            <h2><span>Nombre</span></h2>
+                        </label><br>
+                        <input id="nombre" name="nombre" type="text" placeholder="Tú Nombre"><br><br>
+                        <label for="email">
+                            <h2><span>Email</span></h2>
+                        </label><br>
+                        <input type="email" name="email" id="email" placeholder="Tú email"><br><br>
+                        <label for="mensaje">
+                            <h2><span>Mensaje</span></h2>
+                        </label><br>
+                        <textarea name="mensaje" id="" cols="30" rows="10"
+                            placeholder="Dejame tú mensaje"></textarea><br><br>
+                        <button class="btn" type="submit">✉️ Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer">
+        <!-- piedepagina -->
+        <div class="footer__container">
+            <!-- contenedorfooter -->
+            <div class="footer__copyright">
+                <!-- copy -->
+                <p>Página diseñada por Gustavo Olmos Design &copy; (Sin fines de lucro ni comerciales)</p>
+            </div>
+            <div class="socials">
+                <!-- siguemeyredes -->
+                <div class="follow">
+                    <!-- sigueme -->
+                    <h2><span>Seguime en 👉</span></h2>
+                </div>
+                <div class="networks">
+                    <!-- redes -->
+                    <a href="https://www.instagram.com/jmena/" target="_blank"><img src="../img/iconos/instagram.png"
+                            alt="instagram"></a>
+                    <a href="https://open.spotify.com/artist/6iYRN5eaz8LSxvwkhmwkRj?si=_D-xzflhTYa3AeI8uJlDPA"
+                        target="_blank"><img src="../img/iconos/spotify.png" alt="spotify"></a>
+                    <a href="https://twitter.com/baronjimena?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                        target="_blank"><img src="../img/iconos/twitter.png" alt="twitter"></a>
+                    <a href="https://www.youtube.com/@jmenaOficial" target="_blank"><img src="../img/iconos/youtube.png"
+                            alt="youtube"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

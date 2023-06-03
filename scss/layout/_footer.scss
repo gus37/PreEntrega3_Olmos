@@ -1,0 +1,57 @@
+@import "../utilities/variables";
+.footer__container{
+    @media (min-width: $desktop-lg){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: last baseline;        
+    }
+}
+.footer__copyright {
+    padding: 0 20px;
+
+    p {
+        font-family: $gotic;
+        font-size: 12px;
+        color: $color-lightTertiary;
+        text-shadow: none;
+
+        @media (min-width: $tablet-md) {
+            font-size: 20px;
+        }
+
+        // @media (min-width: $desktop-lg) {
+        //     font-size: 25px;
+        // }
+    }
+}
+
+.socials {
+    display: flex;
+}
+
+.follow {
+    right: 250px;
+    top: 5px;
+}
+
+.networks {
+    top: 10px;
+    right: 20px;
+
+    img {
+        width: 30px;
+        height: 30px;
+        margin: 0 5px;
+
+        &:hover {
+            transition: $transiton;
+            transform: $transform;
+        }
+
+        @media (min-width: $tablet-md) {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+// colors
+$color-lightPrimary: #F2CAB3;
+$color-lightSecondary: #C69FA0;
+$color-lightTertiary: #8C6A56;
+$color-darkPrimary: #260A0F;
+$color-darkSecondary: #40171A;
+$color-callToAction: white;
+$color-black: black;
+$shadow-light: 0 0 10px white;
+$shadow-dark: 0 0 10px black;
+$shadow-darkText: 0 0 2px black;
+$shadow-img: drop-shadow(0 0 5px white);
+$shadowDark-img: drop-shadow(0 0 5px black);
+$gradient: linear-gradient(rgba(0, 0, 0, 0.462), rgba(0, 0, 0, 0.462));
+$gradient-text: rgba(0, 0, 0, 0.433);
+
+// Fonts
+// font-family: 'Courgette', cursive;
+// font-family: 'Roboto Condensed', sans-serif;
+// font-family: 'Special Elite', cursive;
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Roboto+Condensed&family=Special+Elite&display=swap');
+
+$typewriter: 'Special Elite', cursive;
+$gotic: 'Courgette', cursive;
+$artistic: 'Roboto Condensed', sans-serif;
+
+// Breakpoints
+$mobile-s: 320px;
+$mobile-sm: 420px;
+$tablet-md: 768px;
+$desktop-lg: 1024px;
+$desktop-xl: 1280px;
+
+// buttons
+$button-bottom: $color-lightPrimary solid 3px;
+$button-border: $color-darkPrimary 2px solid;
+
+// borders
+$border: $color-darkPrimary 2px solid;
+$border-radius: 5% solid black;
+
+// transitions
+$transiton: all 0.3s ease;
+
+// transformations
+$transform: scale(1.3);

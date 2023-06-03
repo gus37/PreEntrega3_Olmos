@@ -1,0 +1,35 @@
+@import "../utilities/variables";
+
+.audio {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    top: 70px;
+    right: 5px;
+    padding: 0;
+    z-index: 50;
+
+    h2 {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.692);
+        margin: 0;
+        padding: 0;
+
+        span {
+            font-size: 25px;
+        }
+
+        @media (min-width: $desktop-xl) {
+            width: 25%;
+        }
+    }
+
+    audio {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.692);
+
+        @media (min-width: $desktop-xl) {
+            width: 25%;
+        }
+    }
+}

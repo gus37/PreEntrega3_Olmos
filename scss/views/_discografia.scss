@@ -1,0 +1,58 @@
+@import "../utilities/variables";
+
+/* DISCOGRAFIA-HTML */
+.discs-html__container {
+    @media (min-width: $mobile-s) {
+        margin-bottom: 20vh;
+    }
+
+    @media (min-width: $tablet-md) {
+        margin-bottom: 9vh;
+        padding-top: 10vh;
+    }
+}
+
+.disc-html__lists {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.discs-html__playlists {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @media (min-width: $tablet-md) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+.discs-html__listenmore {
+    display: flex;
+}
+
+.listenmore__text {
+    width: 50%;
+}
+
+.listenmore__icons {
+    width: 50%;
+
+    img {
+        width: 50px;
+        height: 50px;
+
+        &:hover {
+            transition: $transiton;
+            transform: $transform;
+        }
+
+        @media (min-width: $tablet-md) {
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
