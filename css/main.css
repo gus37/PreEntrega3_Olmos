@@ -582,6 +582,12 @@ span {
   height: 200px;
   border-radius: 5px;
   filter: drop-shadow(0 0 5px white);
+  transition: all 0.3s ease;
+}
+.gallery__cards:hover {
+  display: inline;
+  animation: flip;
+  animation-duration: 1.8s;
 }
 @media (min-width: 768px) {
   .gallery__cards {

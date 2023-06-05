@@ -271,6 +271,8 @@
     padding: 10px;
     margin-bottom: 13vh;
     gap: 10px;
+    
+    
 
     @media (min-width: $mobile-s) {
         margin-bottom: 17vh;
@@ -305,7 +307,12 @@
     height: 200px;
     border-radius: 5px;
     filter: $shadow-img;
-
+    transition: $transiton;
+    &:hover{
+        display: inline;
+        animation: flip;
+        animation-duration: 1.8s;
+    }
     @media (min-width: $tablet-md) {
         height: 400px;
     }
