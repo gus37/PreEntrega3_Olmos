@@ -4,6 +4,7 @@
 .inicio__texts {
     h1 {
         font-family: $typewriter;
+        margin-top: 9vh;
 
         @media (min-width: $tablet-md) {
             font-size: 35px;
@@ -80,10 +81,16 @@
 }
 
 .bio__pic{
-    padding: 100px 0px;
+    padding: 50px 0px;
+    @media (min-width: $desktop-lg) {
+        padding: 100px 0px;
+    }
 }
 .bio__text{
-    padding: 100px 30px;
+    padding: 50px 30px;
+    @media (min-width: $desktop-lg) {
+        padding: 100px 30px;
+    }
 }
 .bio__pic {
     text-align: center;

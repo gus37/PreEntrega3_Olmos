@@ -304,6 +304,7 @@ span {
 
 .inicio__texts h1 {
   font-family: "Special Elite", cursive;
+  margin-top: 9vh;
 }
 @media (min-width: 768px) {
   .inicio__texts h1 {
@@ -375,11 +376,21 @@ span {
 }
 
 .bio__pic {
-  padding: 100px 0px;
+  padding: 50px 0px;
+}
+@media (min-width: 1024px) {
+  .bio__pic {
+    padding: 100px 0px;
+  }
 }
 
 .bio__text {
-  padding: 100px 30px;
+  padding: 50px 30px;
+}
+@media (min-width: 1024px) {
+  .bio__text {
+    padding: 100px 30px;
+  }
 }
 
 .bio__pic {
@@ -619,18 +630,6 @@ span {
 }
 
 /* DISCOGRAFIA-HTML */
-@media (min-width: 320px) {
-  .discs-html__container {
-    margin-bottom: 20vh;
-  }
-}
-@media (min-width: 768px) {
-  .discs-html__container {
-    margin-bottom: 9vh;
-    padding-top: 10vh;
-  }
-}
-
 .disc-html__lists {
   display: flex;
   flex-direction: column;
@@ -678,13 +677,8 @@ span {
 
 /* GALERIA DE FOTOS */
 .picsgalleryhtml__container {
-  margin-bottom: 10vh;
-}
-@media (min-width: 768px) {
-  .picsgalleryhtml__container {
-    padding-bottom: 5vh;
-    margin-bottom: 9vh;
-  }
+  margin-top: -15vh;
+  padding-bottom: 25vh;
 }
 
 .picshtml__gallery {
@@ -708,17 +702,9 @@ span {
 }
 
 /* VIDEOS-HTML */
-@media (min-width: 420px) {
-  .htmlvideos__container {
-    margin-bottom: 10vh;
-  }
-}
-@media (min-width: 768px) {
-  .htmlvideos__container {
-    padding-top: 9vh;
-    padding-bottom: 5vh;
-    margin-bottom: 9vh;
-  }
+.htmlvideos__container {
+  margin-top: -15vh;
+  padding-bottom: 25vh;
 }
 
 .videoshtml__gallery {

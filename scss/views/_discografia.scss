@@ -1,17 +1,6 @@
 @import "../utilities/variables";
 
 /* DISCOGRAFIA-HTML */
-.discs-html__container {
-    @media (min-width: $mobile-s) {
-        margin-bottom: 20vh;
-    }
-
-    @media (min-width: $tablet-md) {
-        margin-bottom: 9vh;
-        padding-top: 10vh;
-    }
-}
-
 .disc-html__lists {
     display: flex;
     flex-direction: column;
